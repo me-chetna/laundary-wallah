@@ -68,6 +68,7 @@ $("#bookingform").on("submit", function(e){
       }).then(function(response){
           alert("Email sent successfully!");
           console.log("SUCCESS!", response);
+          location.reload(true);
       }).catch(function(error){
           alert("Failed to send email. Please try again.");
           console.error("FAILED...", error);
